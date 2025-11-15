@@ -327,14 +327,14 @@ public class GridManager : MonoBehaviour
             secondArmy.AddUnit("Militia Spearman", 100);
             secondArmy.AddUnit("Militia Spearman", 100);
             secondArmy.AddUnit("Militia Archer", 100);
-            grid[3, 6].Army = secondArmy;
+            grid[21, 6].Army = secondArmy;
 
             Settlement secondTown = new Settlement("Secondtown", "Player", new Vector2Int(2, 5));
             UnityEngine.Debug.Log($"Created new settlement: {secondTown.Name}");
 
-            grid[2, 5].Settlement = secondTown;
-            secondTown.Tile = grid[2, 5];
-            UnityEngine.Debug.Log($"Assigned settlement to grid[2,5]");
+            grid[20, 5].Settlement = secondTown;
+            secondTown.Tile = grid[20, 5];
+            UnityEngine.Debug.Log($"Assigned settlement to grid[20,5]");
 
             secondTown.Garrison.AddUnit(new Unit(UnitDatabase.UnitTypes["Militia Spearman"], 90));
             secondTown.Garrison.AddUnit(new Unit(UnitDatabase.UnitTypes["Militia Archer"], 60));
@@ -343,9 +343,8 @@ public class GridManager : MonoBehaviour
             Settlement enemyTown = new Settlement("Enemytown", "AI", new Vector2Int(3, 10));
             UnityEngine.Debug.Log($"Created new settlement: {enemyTown.Name}");
 
-            grid[7, 4].Settlement =enemyTown;
-            enemyTown.Tile = grid[7, 4];
-            UnityEngine.Debug.Log($"Assigned settlement to grid[2,10]");
+            grid[25, 15].Settlement =enemyTown;
+            enemyTown.Tile = grid[25, 15];
 
             enemyTown.Garrison.AddUnit(new Unit(UnitDatabase.UnitTypes["Militia Spearman"], 90));
             enemyTown.Garrison.AddUnit(new Unit(UnitDatabase.UnitTypes["Militia Archer"], 60));
@@ -354,15 +353,15 @@ public class GridManager : MonoBehaviour
             Settlement enemyTown2 = new Settlement("Enemytown2", "AI", new Vector2Int(6, 15));
             UnityEngine.Debug.Log($"Created new settlement: {enemyTown2.Name}");
 
-            grid[6, 15].Settlement = enemyTown2;
-            enemyTown2.Tile = grid[6, 15];
+            grid[6, 40].Settlement = enemyTown2;
+            enemyTown2.Tile = grid[6, 40];
             UnityEngine.Debug.Log($"Assigned settlement to grid[6,15]");
 
             Army startingEnemyArmy = new Army("AI");
             startingEnemyArmy.AddUnit("Militia Spearman", 100);
             startingEnemyArmy.AddUnit("Militia Spearman", 100);
             startingEnemyArmy.AddUnit("Militia Archer", 100);
-            grid[5, 3].Army = startingEnemyArmy;
+            grid[10, 15].Army = startingEnemyArmy;
         }
 
         for (int x = 0; x < grid.GetLength(0); x++)
