@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ae33f626542901d40b52a277118b0e72
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - settlementPrefab: {instanceID: 0}
+  - armyPrefab: {instanceID: 0}
+  - tileMaterial: {fileID: 2100000, guid: 6aba837b56f4d83489fb19ddc5858833, type: 2}
+  executionOrder: 200
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
